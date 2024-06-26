@@ -1,0 +1,34 @@
+{
+  "name": "typespec-decorator-int64-as-string",
+  "version": "0.57.0",
+  "author": "mascii<mascii@gmail.com>",
+  "description": "A TypeSpec decorator for emitting string type from int64",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mascii/typespec-decorator-int64-as-string.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mascii/typespec-decorator-int64-as-string/issues"
+  },
+  "keywords": [
+    "typespec"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "tspMain": "int64AsString.tsp",
+  "files": [
+    "index.js",
+    "int64AsString.js",
+    "int64AsString.tsp"
+  ],
+  "peerDependencies": {
+    "@typespec/compiler": "^0.57.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2"
+  },
+  "scripts": {
+    "fix": "prettier --write ."
+  }
+}
