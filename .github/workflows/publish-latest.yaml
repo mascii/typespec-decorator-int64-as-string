@@ -11,6 +11,9 @@ jobs:
   publish:
     if: "!github.event.release.prerelease"
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     environment: npm
 
     steps:
@@ -22,6 +25,6 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npm pkg delete scripts devDependencies
-      - run: npm publish --provenance --tag=latest
+      - run: npm publish --provenance --access public --tag=latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
