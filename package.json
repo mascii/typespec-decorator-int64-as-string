@@ -23,10 +23,10 @@
     "int64AsString.tsp"
   ],
   "peerDependencies": {
-    "@typespec/compiler": "^0.57.0"
+    "@typespec/compiler": "^0.67.1"
   },
   "devDependencies": {
-    "prettier": "^3.3.2"
+    "prettier": "^3.5.3"
   },
   "scripts": {
     "fix": "prettier --write ."
