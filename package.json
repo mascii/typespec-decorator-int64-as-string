@@ -16,11 +16,12 @@
   ],
   "type": "module",
   "main": "index.js",
-  "tspMain": "int64AsString.tsp",
+  "tspMain": "index.tsp",
   "files": [
     "index.js",
+    "index.tsp",
     "int64AsString.js",
-    "int64AsString.tsp"
+    "uint64AsString.js"
   ],
   "peerDependencies": {
     "@typespec/compiler": "^0.67.1"
