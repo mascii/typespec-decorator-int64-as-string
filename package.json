@@ -1,6 +1,6 @@
 {
   "name": "typespec-decorator-int64-as-string",
-  "version": "0.57.0",
+  "version": "0.67.1",
   "author": "mascii<mascii@gmail.com>",
   "description": "A TypeSpec decorator for emitting string type from int64",
   "license": "MIT",
