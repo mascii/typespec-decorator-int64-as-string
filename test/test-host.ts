@@ -12,6 +12,7 @@ type OpenAPI3EmitterOptions = any;
 export const ApiTester = createTester(resolvePath(import.meta.dirname, ".."), {
   libraries: [
     "@typespec/http",
+    "@typespec/openapi",
     "@typespec/openapi3",
     "typespec-decorator-int64-as-string",
   ],
@@ -19,6 +20,7 @@ export const ApiTester = createTester(resolvePath(import.meta.dirname, ".."), {
 
 export const SimpleTester = ApiTester.import(
   "@typespec/http",
+  "@typespec/openapi",
   "@typespec/openapi3",
   "typespec-decorator-int64-as-string",
 )
