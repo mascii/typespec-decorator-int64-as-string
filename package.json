@@ -25,7 +25,8 @@
     "lib.js"
   ],
   "peerDependencies": {
-    "@typespec/compiler": "^0.67.1"
+    "@typespec/compiler": "^1.0.0",
+    "@typespec/openapi": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
