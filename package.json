@@ -27,7 +27,7 @@
     "@typespec/compiler": "^0.67.1"
   },
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "prettier": "^3.6.2"
   },
   "scripts": {
     "fix": "prettier --write ."
