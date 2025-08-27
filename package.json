@@ -21,7 +21,8 @@
     "index.js",
     "index.tsp",
     "int64AsString.js",
-    "uint64AsString.js"
+    "uint64AsString.js",
+    "lib.js"
   ],
   "peerDependencies": {
     "@typespec/compiler": "^0.67.1"

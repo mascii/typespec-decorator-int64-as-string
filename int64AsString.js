@@ -1,4 +1,5 @@
 import { $encode } from "@typespec/compiler";
+import { reportDiagnostic } from "./lib.js";
 
 /**
  * @param context {import("@typespec/compiler").DecoratorContext}
@@ -8,8 +9,9 @@ export function $int64AsString(context, target) {
   if ("name" in target.type && target.type.name === "int64") {
     $encode(context, target, "int64");
   } else {
-    throw new Error(
-      "@int64AsString decorator can only be used for int64 properties.",
-    );
+    reportDiagnostic(context.program, {
+      code: "invalid-int64-target",
+      target,
+    });
   }
 }
