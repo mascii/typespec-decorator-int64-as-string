@@ -5,5 +5,6 @@ export default defineConfig({
     environment: "node",
     // testTimeout: 10000, // Uncomment to increase the default timeout
     isolate: false, // Your test shouldn't have side effects doing this will improve performance.
+    globals: true,
   },
 });
