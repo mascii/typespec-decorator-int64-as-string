@@ -35,6 +35,8 @@
     "vitest": "^3.2.4"
   },
   "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
     "fix": "prettier --write ."
   }
 }
