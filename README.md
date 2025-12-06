@@ -95,6 +95,34 @@ imports:
   - typespec-decorator-int64-as-string
 ```
 
+## Replacing this package with official TypeSpec decorators
+
+This package can be replaced by official TypeSpec decorators.
+
+### For `int64`/`uint64` properties
+
+Use the `@encode` decorator:
+
+```typespec
+model MyModel {
+  @encode("int64", string) id: int64;
+}
+```
+
+### For `int64[]`/`uint64[]` properties
+
+Use `@extension` decorator from `@typespec/openapi`.
+
+```typespec
+import "@typespec/openapi";
+
+using OpenAPI;
+
+model MyModel {
+  @extension("items", #{ type: "string", format: "int64" }) ids: int64[];
+}
+```
+
 ## License
 
 MIT
