@@ -17,6 +17,12 @@
   "type": "module",
   "main": "index.js",
   "tspMain": "index.tsp",
+  "exports": {
+    ".": {
+      "typespec": "./index.tsp",
+      "default": "./index.js"
+    }
+  },
   "files": [
     "index.js",
     "index.tsp",
